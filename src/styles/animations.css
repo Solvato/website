@@ -1,0 +1,86 @@
+/* Animation keyframes */
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 0.4;
+  }
+  100% {
+    background-position: 100% 50%;
+    opacity: 0.2;
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Applying animations */
+.container {
+  animation: fadeIn 0.8s ease-out forwards;
+}
+
+.logo-container {
+  animation: fadeIn 1s ease-out forwards 0.2s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
+h1 {
+  animation: fadeIn 1s ease-out forwards 0.4s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
+.subheading {
+  animation: fadeIn 1s ease-out forwards 0.6s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
+.notify-form {
+  animation: fadeIn 1s ease-out forwards 0.8s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
+footer {
+  animation: fadeIn 1s ease-out forwards 1s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
+/* Hover animations */
+button[type="submit"]:hover {
+  animation: pulse 2s infinite;
+}

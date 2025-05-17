@@ -1,0 +1,84 @@
+/* Responsive styles */
+@media (max-width: 640px) {
+  :root {
+    /* Adjust font sizes for smaller screens */
+    --font-size-3xl: 1.5rem;  /* 24px */
+    --font-size-2xl: 1.25rem; /* 20px */
+    --font-size-xl: 1.125rem; /* 18px */
+    --font-size-lg: 1rem;     /* 16px */
+  }
+  
+  .container {
+    padding: var(--space-2);
+  }
+  
+  h1 {
+    margin-bottom: var(--space-2);
+  }
+  
+  .logo-container {
+    margin-bottom: var(--space-4);
+  }
+  
+  .social-links {
+    gap: var(--space-2);
+  }
+  
+  .social-links a {
+    width: 36px;
+    height: 36px;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 1024px) {
+  :root {
+    /* Adjust font sizes for medium screens */
+    --font-size-3xl: 1.75rem; /* 28px */
+  }
+  
+  .container {
+    padding: var(--space-3);
+  }
+  
+  .logo-container {
+    margin-bottom: var(--space-5);
+  }
+}
+
+@media (min-width: 1025px) {
+  .container {
+    padding: var(--space-4);
+  }
+  
+  h1 {
+    font-size: var(--font-size-4xl);
+  }
+  
+  .logo-container {
+    margin-bottom: var(--space-6);
+  }
+}
+
+/* Height-based media queries for better vertical alignment */
+@media (max-height: 700px) {
+  .container {
+    padding-top: var(--space-3);
+    padding-bottom: var(--space-3);
+  }
+  
+  header {
+    margin-bottom: var(--space-3);
+  }
+  
+  main {
+    margin-bottom: var(--space-3);
+  }
+  
+  .logo-container {
+    margin-bottom: var(--space-3);
+  }
+  
+  footer {
+    padding-top: var(--space-2);
+  }
+}
